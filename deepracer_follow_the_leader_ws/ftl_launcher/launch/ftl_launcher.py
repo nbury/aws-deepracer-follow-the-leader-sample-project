@@ -57,6 +57,13 @@ def generate_launch_description():
         executable='deepracer_navigation_node',
         name='deepracer_navigation_node'
     )
+
+    aws_uploader_node = Node(
+        package='aws_uploader_pkg',
+        namespace='aws_uploader_pkg',
+        executable='aws_uploader_node',
+        name='aws_uploader_node'
+    )
     software_update_node = Node(
         package='deepracer_systems_pkg',
         namespace='deepracer_systems_pkg',
@@ -181,4 +188,5 @@ def generate_launch_description():
     ld.add_action(usb_monitor_node)
     ld.add_action(webserver_publisher_node)
     ld.add_action(web_video_server_node)
+    ld.add_action(aws_uploader_node)
     return ld

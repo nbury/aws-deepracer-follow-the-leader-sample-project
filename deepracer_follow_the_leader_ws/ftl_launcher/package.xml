@@ -29,6 +29,7 @@
   <depend>usb_monitor_pkg</depend>
   <depend>webserver_pkg</depend>
   <depend>web_video_server</depend>
+  <depend>aws_uploader_pkg</depend>
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
