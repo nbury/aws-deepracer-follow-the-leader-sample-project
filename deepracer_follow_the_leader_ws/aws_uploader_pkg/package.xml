@@ -26,7 +26,7 @@
   <!-- Authors do not have to be maintainers, but could be -->
   <!-- Example: -->
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
-<depend>boto3</depend>
+<!--<run_depend>boto3</run_depend>-->
 <depend>deepracer_interfaces_pkg</depend>
 <depend>rclpy</depend>
   <!-- The *depend tags are used to specify dependencies -->
