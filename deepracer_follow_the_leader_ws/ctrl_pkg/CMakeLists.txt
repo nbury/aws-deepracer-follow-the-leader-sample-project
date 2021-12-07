@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(aws_uploader_pkg)
+project(ctrl_pkg)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
