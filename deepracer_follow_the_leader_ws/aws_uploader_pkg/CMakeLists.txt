@@ -21,19 +21,18 @@ find_package(rclcpp REQUIRED)
 find_package(deepracer_interfaces_pkg REQUIRED)
 
 
-add_executable(ctrl_node
-    src/ctrl_node.cpp
-    src/ctrl_state.cpp
+add_executable(aws_uploader_node
+    aws_uploader_pkg/aws_uploader_node.py
 )
 
-target_include_directories(ctrl_node PRIVATE
+target_include_directories(aws_uploader_node PRIVATE
     include
 )
 
-ament_target_dependencies(ctrl_node rclcpp deepracer_interfaces_pkg) 
+ament_target_dependencies(aws_uploader_node rclcpp deepracer_interfaces_pkg) 
 
 install(TARGETS
-  ctrl_node
+  aws_uploader_node
   DESTINATION
   lib/${PROJECT_NAME}
 )
